@@ -20,7 +20,16 @@ components:
   description: 
 components-count: 2
 relationships: 
-relationship-count: 0
+- type: "non-binding"
+  kind: "edge"
+  description: "An edge relationship between policyendpoint and securitygroup"
+- type: "non-binding"
+  kind: "edge"
+  description: "An edge relationship between ENIConfig and Subnet"
+- type: "non-binding"
+  kind: "edge"
+  description: "An edge relationship between VPCLink and Integration"
+relationship-count: 3
 featureList: [
   "Keep revision history and audit trail of all configuration changes",
   "Use Kanvas&lsquo;s visual designer to explore your App Mesh configuration",
